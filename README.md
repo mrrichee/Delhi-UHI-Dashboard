@@ -55,21 +55,45 @@ Using satellite imagery, meteorological observations, urban morphology, and air-
 
 The dashboard provides interactive visualizations that help researchers, planners, and policymakers explore heat stress patterns and evaluate mitigation strategies.
 
-## 📌 What It Does
-- Predicts Land Surface Temperature (LST) across 1,858 Delhi grids
-- Classifies grids into Severe / High / Moderate heat stress zones
-- Identifies 187 priority hotspot grids (top 10% LST)
-- Quantifies 12 physical drivers via SHAP explainability
-- Simulates 9 cooling intervention scenarios with per-grid °C reduction
-- Generates optimal intervention strategy for urban planners
+## ✨ Key Features
 
+### 🌍 Geospatial Heat Mapping
+- Predicts Land Surface Temperature (LST) across **1,858 spatial grids** covering Delhi NCR.
+- Interactive geospatial visualization using Folium maps.
+
+### 🔥 Urban Heat Hotspot Detection
+- Automatically identifies the **Top 10% highest-temperature grids**.
+- Categorizes regions into **Severe**, **High**, and **Moderate** heat stress zones.
+
+### 🧠 Explainable Artificial Intelligence
+- Uses **SHAP (SHapley Additive Explanations)** to quantify the contribution of each environmental and urban feature.
+- Provides both **global** and **local** model interpretability.
+
+### 📈 Scenario-Based Cooling Simulation
+Evaluates multiple mitigation strategies, including:
+- 🌳 Urban Greening
+- 💧 Water Body Restoration
+- ☀️ Cool Roofs
+- 🏙️ Built-up Surface Treatment
+- 🚀 Combined Intervention Scenario
+
+### 🎛️ Interactive What-if Predictor
+- Modify environmental and urban variables using sliders.
+- Instantly observe the predicted Land Surface Temperature.
+
+### 🏛️ Decision Support System
+- Generates grid-level intervention recommendations.
+- Helps planners prioritize mitigation strategies based on predicted cooling potential.
+  
 ## 📊 Model Performance
+
 | Metric | Value |
-|--------|-------|
-| Spatial CV R² | 0.9550 ± 0.0021 |
-| Test R² | 0.9697 |
-| Test RMSE | 1.32°C |
-| Physics checks passed | 10/10 |
+|--------|-------:|
+| Spatial Cross Validation R² | **0.9550 ± 0.0021** |
+| Test R² | **0.9697** |
+| Test RMSE | **1.32°C** |
+| Mean Absolute Error | **1.04°C** |
+| Physics Validation | **9 / 10 checks passed** |
 
 ## 🛰️ Data Sources
 | Source | Variables |
