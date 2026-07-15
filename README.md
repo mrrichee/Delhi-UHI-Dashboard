@@ -96,33 +96,108 @@ Evaluates multiple mitigation strategies, including:
 | Physics Validation | **9 / 10 checks passed** |
 
 ## 🛰️ Data Sources
-| Source | Variables |
-|--------|-----------|
-| Landsat 8 | Land Surface Temperature |
-| Sentinel-2 | NDVI, NDBI, MNDWI, Albedo |
-| ERA5 / CPCB | Air temperature, humidity, wind speed |
-| Sentinel-5P | NO₂, CO, SO₂ column density |
-| GHSL / UT-GLOBUS | Built volume, impervious surface |
 
-## 🏙️ Cooling Interventions Modelled
-- 🌿 Urban Greening (NDVI +0.10) → ~1.5°C mean cooling
-- 💧 Water Body Enhancement (MNDWI +0.10) → ~3.4°C mean cooling
-- ☀️ Cool Roofs / Albedo increase (+0.10) → ~1.2°C mean cooling
-- 🏗️ Built-up Surface Treatment (NDBI -0.05) → ~2.7°C mean cooling
-- 🔗 Combined Aggressive scenario → maximum cooling
+| Source | Variables Used |
+|--------|----------------|
+| **Landsat 8** | Land Surface Temperature (LST) |
+| **Sentinel-2** | NDVI, NDBI, MNDWI, Albedo |
+| **ERA5 Reanalysis** | Air Temperature, Humidity, Wind Speed |
+| **Sentinel-5P** | NO₂, CO Column Density |
+| **GHSL** | Built Volume, Impervious Surface |
 
-## 🚀 Run Locally
-\`\`\`bash
-pip install -r requirements.txt
-streamlit run dashboard.py
-\`\`\`
+## 🏗️ Project Workflow
 
+```text
+Satellite & Meteorological Data
+(Landsat 8 • Sentinel-2 • ERA5 • Sentinel-5P • GHSL)
+                │
+                ▼
+      Data Collection & Cleaning
+                │
+                ▼
+       Feature Engineering
+      (12 Environmental Features)
+                │
+                ▼
+     XGBoost Spatial Regression
+                │
+                ▼
+      Spatial Cross Validation
+                │
+                ▼
+      SHAP Explainability
+                │
+                ▼
+  Scenario-Based Cooling Simulation
+                │
+                ▼
+ Interactive Streamlit Dashboard
+                │
+                ▼
+ Urban Planning Recommendations
+```
+
+## 🌿 Cooling Intervention Strategies
+
+| Strategy | Expected Cooling |
+|----------|-----------------:|
+| 🌳 Urban Greening | ~1.5°C |
+| 💧 Water Body Restoration | ~3.4°C |
+| ☀️ Cool Roofs / High Albedo | ~1.2°C |
+| 🏙️ Built-up Surface Treatment | ~2.7°C |
+| 🚀 Combined Intervention | Maximum Cooling |
+
+## 🖥️ Dashboard Modules
+
+- 📊 Project Overview
+- 🗺️ Heat Stress Mapping
+- 🔥 Hotspot Detection
+- 🧠 SHAP Explainability
+- 🎛️ Interactive What-if Predictor
+- 🌿 Cooling Scenario Simulator
+- 📍 Grid-wise Intervention Recommendations
+
+  
+## 📦 Dataset
+
+The training dataset (~45 MB) is not included in this repository because of GitHub repository size considerations.
+
+The project was developed using publicly available Earth Observation datasets:
+
+- Landsat 8
+- Sentinel-2
+- ERA5 Reanalysis
+- Sentinel-5P
+- GHSL
+
+  
 ## 📁 Key Output Files
 - `delhi_heat_stress_map.html` — interactive LST map (all grids)
 - `delhi_hotspots_map.html` — top 10% hotspot grids
 - `delhi_cooling_map.html` — per-grid cooling after intervention
 - `optimal_intervention_strategy_v2.csv` — full strategy table
 
-## ⚙️ Tech Stack
-Python · XGBoost · SHAP · Folium · Streamlit · 
-Pandas · Scikit-learn · Google Earth Engine (data collection)
+## ⚙️ Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Programming | Python |
+| Machine Learning | XGBoost, Scikit-learn |
+| Explainable AI | SHAP |
+| Geospatial Analysis | Folium |
+| Dashboard | Streamlit |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib |
+| Earth Observation | Google Earth Engine |
+
+## 📦 Dataset
+
+The training dataset (~45 MB) is not included in this repository because of GitHub repository size considerations.
+
+The project was developed using publicly available Earth Observation datasets:
+
+- Landsat 8
+- Sentinel-2
+- ERA5 Reanalysis
+- Sentinel-5P
+- GHSL
