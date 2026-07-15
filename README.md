@@ -9,9 +9,10 @@
 
 ---
 
-## 🚀 Live Dashboard
+## 🚀 Live Demo
 
-👉 https://delhi-uhi-dashboard.streamlit.app
+🌐 **Live Dashboard:**  
+https://delhi-uhi-dashboard.streamlit.app/
 
 ---
 
