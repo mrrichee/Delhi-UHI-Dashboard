@@ -1,12 +1,59 @@
-# Delhi-UHI-Dashboard
 # 🌡️ Delhi Urban Heat Island — AI/ML Mitigation Dashboard
 
-An end-to-end geospatial AI/ML system to identify urban heat stress 
-hotspots, quantify key drivers of urban heating, and generate 
-optimized scenario-based cooling interventions for Delhi NCT.
+> **Physics-informed Explainable AI System for Urban Heat Stress Mapping, Hotspot Detection and Cooling Intervention Planning for Delhi NCR**
 
-## 🔗 Live Dashboard
-[delhi-uhi-dashboard.streamlit.app](https://delhi-uhi-dashboard.streamlit.app)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![XGBoost](https://img.shields.io/badge/XGBoost-Regression-success)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+---
+
+## 🚀 Live Dashboard
+
+👉 https://delhi-uhi-dashboard.streamlit.app
+
+---
+
+## 📸 Dashboard Preview
+
+### Project Overview
+
+![Overview](images/overview.png)
+
+### Heat Stress Mapping
+
+![Heat Stress Map](images/heat_stress_map.png)
+
+### Hotspot Detection
+
+![Hotspot Map](images/hotspot_map.png)
+
+### Cooling Effect Map
+
+![Cooling Effect](images/cooling_effect_map.png)
+
+### SHAP Explainability
+
+![SHAP Analysis](images/shap_analysis.png)
+
+### What-if Predictor
+
+![Predictor](images/what_if_predictor.png)
+
+### Intervention Recommendations
+
+![Recommendations](images/intervention_recommendations.png)
+
+---
+
+## 📖 Project Overview
+
+This project presents a complete **AI/ML-powered Urban Heat Island (UHI) Decision Support System** developed for **Delhi NCR**.
+
+Using satellite imagery, meteorological observations, urban morphology, and air-quality indicators, the system predicts **Land Surface Temperature (LST)**, identifies urban heat hotspots, explains the physical drivers of heating using SHAP, and recommends optimized cooling interventions for each hotspot grid.
+
+The dashboard provides interactive visualizations that help researchers, planners, and policymakers explore heat stress patterns and evaluate mitigation strategies.
 
 ## 📌 What It Does
 - Predicts Land Surface Temperature (LST) across 1,858 Delhi grids
