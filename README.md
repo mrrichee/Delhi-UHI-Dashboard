@@ -195,9 +195,27 @@ The project was developed using publicly available Earth Observation datasets:
 The training dataset (~45 MB) is not included in this repository because of GitHub repository size considerations.
 
 The project was developed using publicly available Earth Observation datasets:
-
 - Landsat 8
 - Sentinel-2
 - ERA5 Reanalysis
 - Sentinel-5P
 - GHSL
+
+## 📈 Key Results
+
+- 🎯 Test R²: **0.9697**
+- 🌍 Spatial CV R²: **0.9550 ± 0.0021**
+- 🔥 187 urban heat hotspot grids identified
+- 🌿 Nine intervention scenarios evaluated
+- 🧠 Explainable AI using SHAP
+- 🗺️ Interactive Streamlit dashboard deployed
+
+  ## 🔮 Future Improvements
+
+- Integrate real-time weather data
+- Extend analysis to multiple Indian cities
+- Incorporate climate change projection scenarios
+- Optimize intervention strategies using multi-objective optimization
+- Deploy a mobile-friendly dashboard
+
+
