@@ -1,8 +1,6 @@
 # Delhi-UHI-Dashboard
 # 🌡️ Delhi Urban Heat Island — AI/ML Mitigation Dashboard
 
-**ISRO Bharatiya Antariksh Hackathon 2026 | Problem Statement 1**
-
 An end-to-end geospatial AI/ML system to identify urban heat stress 
 hotspots, quantify key drivers of urban heating, and generate 
 optimized scenario-based cooling interventions for Delhi NCT.
